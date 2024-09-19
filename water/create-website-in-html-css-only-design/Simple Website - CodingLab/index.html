@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All-in-One Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="menu">
+        <div class="logo">
+          <a href="#home">CodingLab</a>
+        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home">
+      <div class="center">
+        <div class="title">Create Amazing Website</div>
+        <div class="sub_title">Pure HTML & CSS Only</div>
+        <div class="btns">
+          <button id="learnMoreBtn">Learn More</button>
+          <button id="subscribeBtn">Subscribe</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+      <h2>Our Services</h2>
+      <p>We offer a wide range of web development and design services to meet your business needs.</p>
+      <div class="service-container">
+        <div class="service-box">
+          <h3>Web Development</h3>
+          <p>We provide full-stack web development services to create dynamic, responsive websites using HTML, CSS, JavaScript, and more.</p>
+        </div>
+
+        <div class="service-box">
+          <h3>Web Design</h3>
+          <p>Our team designs visually appealing and user-friendly websites focused on delivering the best user experience.</p>
+        </div>
+
+        <div class="service-box">
+          <h3>SEO Optimization</h3>
+          <p>Our SEO experts help you improve search engine rankings and drive organic traffic to your site.</p>
+        </div>
+
+        <div class="service-box">
+          <h3>Mobile App Development</h3>
+          <p>We build mobile-friendly websites and apps to ensure smooth performance across all devices.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <h2>Contact Us</h2>
+      <p>Feel free to reach out to us with any questions or inquiries. We'd love to hear from you!</p>
+
+      <div class="contact-form">
+        <form action="submit_contact.php" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="section feedback">
+      <h2>Feedback</h2>
+      <p>Your feedback is valuable to us! Please take a moment to share your thoughts with us.</p>
+
+      <div class="feedback-form">
+        <form action="submit_feedback.php" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required />
+
+          <label for="feedback">Feedback</label>
+          <textarea id="feedback" name="feedback" placeholder="Your feedback" required></textarea>
+
+          <button type="submit">Submit Feedback</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 CodingLab. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
